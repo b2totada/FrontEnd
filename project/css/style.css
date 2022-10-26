@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Epilogue", sans-serif;
+    font-size: 1.3rem;
+}
+.container {
+    background-image: url("../images/bg_img.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+/*NAV*/
+.navbar-col {
+    display: none;
+}
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(0, 0%, 31%);
+}
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+.navbar li {
+    list-style-type: none;
+    padding: 1rem;
+}
+.navbar a {
+    font-size: 60%;
+    text-decoration: none;
+    color: hsl(0, 0%, 31%);
+}
+.navbar-logo {
+    font-size: 120%;
+    font-weight: bold;
+}
+.navbar-toggle {
+    display: none;
+}
+.navbar-menu-items:hover,
+.user-handling:hover {
+    background-color: hsl(0, 0%, 21%);
+}
+.navbar-menu-items:hover a,
+.user-handling:hover a {
+    color: white;
+}
+/*Dropdown*/
+.dropdown {
+    position: relative;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: hsl(0, 0%, 31%);
+    padding: 1rem;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: hsl(0, 0%, 21%);
+    color: white;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*MAIN*/
+main {
+    background-color: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 8rem;
+    min-height: 100vh;
+    width: 70%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+/*Text-side*/
+main h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+main p {
+    font-size: 0.7rem;
+    width: 18rem;
+    color: hsl(0, 0%, 61%);
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+main button {
+    background-color: hsl(0, 0%, 25%);
+    color: #fff;
+    border: none;
+    font-size: 0.7rem;
+    padding: 0.6rem 1rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+}
+#text-side {
+    margin-top: 3rem;
+}
+/*Clients-logos*/
+.clients-logos img {
+    width: 4rem;
+}
+.clients-logos {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 18rem;
+}
+.clients-logos img:nth-child(2) {
+    width: 7rem;
+}
+/*Img-side*/
+.img-side img {
+    margin-top: 2rem;
+    width: 20rem;
+}
+
+/*RESPONSIVE*/
+@media ((min-width: 1200px) and (max-width: 1620px)) {
+    main {
+        width: 82%;
+    }
+}
+@media ((min-width: 901px) and (max-width: 1199px)) {
+    .img-side {
+        display: none;
+    }
+    main {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 8rem;
+        height: 70vh;
+        align-items: center;
+        justify-content: center;
+        width: 85%;
+    }
+}
+@media (max-width: 900px) {
+    .navbar-logo {
+        display: none;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-menu-items,
+    .dropbtn {
+        display: none;
+    }
+    .img-side {
+        display: none;
+    }
+    main {
+        display: grid;
+        grid-template-columns: auto;
+        column-gap: 8rem;
+        height: 70vh;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+    }
+    .clients-logos {
+        margin: 3rem 0 3rem 0;
+    }
+
+    .navbar-col {
+        display: none;
+        text-align: center;
+    }
+    .navbar-col li {
+        list-style-type: none;
+    }
+    .navbar-col li:hover {
+        background-color: hsl(0, 0%, 21%);
+    }
+    .navbar-col li a:hover {
+        color: white;
+    }
+    .navbar-col li a {
+        text-decoration: none;
+        color: hsl(0, 0%, 31%);
+        font-size: 70%;
+    }
+    .navbar-col-dropdown {
+        position: relative;
+    }
+    .navbar-col-dropdown-content {
+        display: none;
+        position: relative;
+        background-color: white;
+    }
+    .navbar-col-dropdown-content a {
+        color: hsl(0, 0%, 31%);
+        padding: 0.5rem;
+        text-decoration: none;
+        display: block;
+    }
+    .navbar-col-dropdown-content a:hover {
+        background-color: hsl(0, 0%, 21%);
+        color: white;
+    }
+    .navbar-col-dropdown:hover .navbar-col-dropdown-content {
+        display: block;
+    }
+    .navbar-col.responsive {
+        display: block;
+    }
+}
