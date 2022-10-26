@@ -160,6 +160,7 @@ main button {
     .navbar-toggle {
         display: block;
     }
+    
     .navbar-menu-items,
     .dropbtn {
         display: none;
