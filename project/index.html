@@ -4,33 +4,55 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>The Witcher</title>
-	<link rel="stylesheet" type="text/css" href="css/mystyle.css">
 	<link rel="icon" href="images/icon.ico">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/script.js" defer></script>
 </head>
 <body>
-	<nav>
-		<div class="logos-section">
-			<h2 class="logo">The&nbsp;Witcher</h2>
-			<ul class="menu-items">
-				<li>Characters</li>
-				<li>
-					Locations<svg width="10" height="6" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
-			  	</li>
-			  	<li>Lore</li>
-			  	<li>About</li>
-				<li class="icon">
-					&#9776;
-				</li>
-			</ul>
-		</div>
-		<ul class="cta-btns">
-			<li>Login</li>
-			<li>Register</li>
+	<nav class="navbar">
+        <ul class="navbar-leftside">
+			<li class="navbar-logo"><p>The&nbsp;Witcher</p></li>
+			<li class="navbar-toggle"><i class="fas fa-bars" onclick="myFunction()"></i></li>
+			<li class="navbar-menu-items"><a href="#">Characters</a></li>
+			<li class="navbar-menu-items"><a href="#">Locations</a></li>
+			<li>
+				<div class="dropdown">
+					<a class="dropbtn">
+						Lore<svg width="15" height="9" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+					</a>
+					<div class="dropdown-content">
+					  <a href="#">Ancient&nbsp;history</a>
+					  <a href="#">Modern&nbsp;history</a>
+					</div>
+				</div>
+			</li>
+			<li class="navbar-menu-items"><a href="#">About</a></li>
 		</ul>
-  	</nav>
+		<ul class="navbar-rightside">
+			<li class="user-handling"><a href="#">Login</a></li>
+			<li class="user-handling"><a href="#">Register</a></li>
+		</ul>
+    </nav>
+	<ul class="navbar-col">
+		<li class="navbar-col-menu-items"><a href="#">Characters</a></li>
+		<li class="navbar-col-menu-items"><a href="#">Locations</a></li>
+		<li class="navbar-col-menu-items">
+			<div class="navbar-col-dropdown">
+				<a class="navbar-col-dropbtn">
+					Lore<svg width="15" height="9" xmlns="http://www.w3.org/2000/svg"><path stroke="#686868" stroke-width="1.5" fill="none" d="m1 1 4 4 4-4"/></svg>
+				</a>
+				<div class="navbar-col-dropdown-content">
+				  <a class="navbar-col-drop" href="#">Ancient&nbsp;history</a>
+				  <a class="navbar-col-drop" href="#">Modern&nbsp;history</a>
+				</div>
+			</div>
+		</li>
+		<li class="navbar-col-menu-items"><a href="#">About</a></li>
+	</ul>
 
 	<div class="container">
 		<main>
@@ -52,5 +74,6 @@
 			</section>
 		</main>
 	</div>
+	
 </body>
 </html>
