@@ -5,7 +5,7 @@
     font-family: "Epilogue", sans-serif;
     font-size: 1.3rem;
 }
-.container {
+body {
     background-image: url("../images/bg_img.jpg");
     background-color: white;
     background-repeat: no-repeat;
@@ -15,6 +15,9 @@
 /*NAV*/
 .navbar-col {
     display: none;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
 }
 nav {
     display: flex;
@@ -22,6 +25,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     color: hsl(0, 0%, 31%);
+    position: sticky;
+    top: 0;
+    background-color: white;
 }
 .navbar ul {
     display: flex;
@@ -132,6 +138,18 @@ main button {
     margin-top: 2rem;
     width: 20rem;
 }
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+footer p {
+    padding: 1rem 0 1rem 0;
+    color: hsl(0, 0%, 31%);
+}
 
 /*RESPONSIVE*/
 @media ((min-width: 1200px) and (max-width: 1620px)) {
@@ -145,9 +163,9 @@ main button {
     }
     main {
         display: grid;
+        flex-direction: column;
         grid-template-columns: auto;
-        column-gap: 8rem;
-        height: 70vh;
+        height: 100vh;
         align-items: center;
         justify-content: center;
         width: 85%;
