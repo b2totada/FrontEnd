@@ -12,76 +12,6 @@ body {
     background-attachment: fixed;
     height: 100%;
 }
-/*NAV*/
-.navbar-col {
-    display: none;
-    background-color: #fff;
-    position: sticky;
-    top: 0;
-}
-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    color: hsl(0, 0%, 31%);
-    position: sticky;
-    top: 0;
-    background-color: white;
-}
-.navbar ul {
-    display: flex;
-    align-items: center;
-}
-.navbar li {
-    list-style-type: none;
-    padding: 1rem;
-}
-.navbar a {
-    font-size: 60%;
-    text-decoration: none;
-    color: hsl(0, 0%, 31%);
-}
-.navbar-logo a{
-    font-size: 120%;
-    font-weight: bold;
-}
-.navbar-toggle {
-    display: none;
-}
-.navbar-menu-items:hover,
-.user-handling:hover {
-    background-color: hsl(0, 0%, 21%);
-}
-.navbar-menu-items:hover a,
-.user-handling:hover a {
-    color: white;
-}
-/*Dropdown*/
-.dropdown {
-    position: relative;
-}
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: hsl(0, 0%, 31%);
-    padding: 1rem;
-    text-decoration: none;
-    display: block;
-}
-.dropdown-content a:hover {
-    background-color: hsl(0, 0%, 21%);
-    color: white;
-}
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 /*MAIN*/
 main {
     background-color: black;
@@ -138,18 +68,6 @@ main button {
     margin-top: 2rem;
     width: 20rem;
 }
-/*FOOTER*/
-footer {
-    width: 100%;
-    background-color: #fff;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    padding: 1rem 0 1rem 0;
-}
-footer q {
-    color: hsl(0, 0%, 31%);
-}
 
 /*RESPONSIVE*/
 @media ((min-width: 1200px) and (max-width: 1620px)) {
@@ -172,17 +90,6 @@ footer q {
     }
 }
 @media (max-width: 900px) {
-    .navbar-logo {
-        display: none;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    
-    .navbar-menu-items,
-    .dropbtn {
-        display: none;
-    }
     .img-side {
         display: none;
     }
@@ -197,48 +104,5 @@ footer q {
     }
     .clients-logos {
         margin: 3rem 0 3rem 0;
-    }
-
-    .navbar-col {
-        display: none;
-        text-align: center;
-    }
-    .navbar-col li {
-        list-style-type: none;
-    }
-    .navbar-col li:hover {
-        background-color: hsl(0, 0%, 21%);
-    }
-    .navbar-col li a:hover {
-        color: white;
-    }
-    .navbar-col li a {
-        text-decoration: none;
-        color: hsl(0, 0%, 31%);
-        font-size: 70%;
-    }
-    .navbar-col-dropdown {
-        position: relative;
-    }
-    .navbar-col-dropdown-content {
-        display: none;
-        position: relative;
-        background-color: white;
-    }
-    .navbar-col-dropdown-content a {
-        color: hsl(0, 0%, 31%);
-        padding: 0.5rem;
-        text-decoration: none;
-        display: block;
-    }
-    .navbar-col-dropdown-content a:hover {
-        background-color: hsl(0, 0%, 21%);
-        color: white;
-    }
-    .navbar-col-dropdown:hover .navbar-col-dropdown-content {
-        display: block;
-    }
-    .navbar-col.responsive {
-        display: block;
     }
 }
