@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Epilogue", sans-serif;
+    font-size: 1.3rem;
+}
+body {
+    background-image: url("../images/bg_img.jpg");
+    background-color: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+/*MAIN*/
+.container {
+    padding: 3rem 0rem 3rem 0rem;
+}
+main {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    row-gap: 3rem;
+    column-gap: 3rem;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+.card {
+    background-color: #fff;
+    border-radius: 0.5rem;
+    border: 3px solid black;
+}
+.card-img {
+    height: 12rem;
+    background-size: cover;
+    border-radius: 0.3rem 0.3rem 0 0;
+}
+.card h2,
+.card p {
+    padding: 0;
+}
+.card h2 {
+    text-align: center;
+    padding: 0.3rem 0 0.3rem 0;
+}
+.card p {
+    /*display: none;*/
+    font-size: 70%;
+    text-align: justify;
+    padding: 0 0.6rem 0 0.6rem;
+}
+.card a {
+    /*display: none;*/
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    text-align: center;
+    margin: 1rem 2rem;
+}
+.card:hover {
+    background-color: hsl(0, 0%, 21%);
+    color: #fff;
+    cursor: default;
+    transform: scale(1.1);
+    transition: all 0.5s ease;
+}
+.geralt {
+    background-image: url('../images/characters/geralt.jpg');
+}
+.ciri {
+    background-image: url('../images/characters/ciri.jpg');
+}
+.yen {
+    background-image: url('../images/characters/yen.jpg');
+}
+.triss {
+    background-image: url('../images/characters/triss.jpg');
+}
+.dandelion {
+    background-image: url('../images/characters/dandelion.jpg');
+}
+.emhyr {
+    background-image: url('../images/characters/emhyr.jpg');
+}
+.calanthe {
+    background-image: url('../images/characters/calanthe.jpg');
+}
+.fringilla {
+    background-image: url('../images/characters/fringilla.jpg');
+}
+.vesemir {
+    background-image: url('../images/characters/vesemir.jpg');
+}
+.philippa {
+    background-image: url('../images/characters/philippa.jpg');
+}
+.mouse {
+    background-image: url('../images/characters/mouse.jpg');
+}
+.stregobor {
+    background-image: url('../images/characters/stregobor.jpg');
+}
+/*FOOTER*/
+footer {
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    padding: 1rem 0 1rem 0;
+}
+footer q {
+    color: hsl(0, 0%, 31%);
+}
+
+/*RESPONSIVE*/
+@media ((min-width: 1225px) and (max-width: 1520px)) {
+    main {
+        grid-template-columns: 25% 25% 25%;
+    }
+}
+@media ((min-width: 1015px) and (max-width: 1224px)) {
+    main {
+        grid-template-columns: 40% 40%;
+    }
+}
+@media (max-width: 1014px) {
+    main {
+        grid-template-columns: 75%;
+    }
+}
